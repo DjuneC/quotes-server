@@ -1,8 +1,15 @@
 import express from "express";
 
+import { dirname } from "node:path";
+import { fileURLToPath } from "node:url";
+
 import quotes from "./data.js";
 
 const app = express();
+
+app.set("view engine", "ejs");
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const PORT = process.env.PORT || 4000;
 
