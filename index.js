@@ -8,9 +8,13 @@ app.set("view engine", "ejs");
 
 const PORT = process.env.PORT || 4000;
 
+const getRandomQuote = (quotes) => {
+    return quotes[Math.floor(Math.random() * quotes.length)];
+}
 
 app.get("/", (req, res) => {
-    res.render("index", { quotes })
+    const quote = getRandomQuote(quotes);
+    res.render("index", { quote })
 })
 
 app.listen(PORT, () => {
