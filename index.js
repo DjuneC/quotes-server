@@ -17,6 +17,11 @@ app.get("/", (req, res) => {
     res.render("index", { quote })
 })
 
+//api to handle CRUD for quotes dashboard
+app.get('/api/v1/quotes/get-all', (req, res, next) => {
+    res.json({ quotes })
+})
+
 app.listen(PORT, () => {
     console.log(`Server is listening at http://localhost:${PORT}`);
 })
