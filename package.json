@@ -1,0 +1,14 @@
+{
+  "name": "quotes",
+  "version": "1.0.0",
+  "description": "A personal mindful quotes to bring joy and motivation everyday!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rodelin Cesar",
+  "license": "ISC",
+  "dependencies": {
+    "quotes": "file:"
+  }
+}
