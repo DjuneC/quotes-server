@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .quote-container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .blob {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    background: linear-gradient(135deg, #8EC5FC, #E0C3FC);
+    border-radius: 50% 40% 60% 30% / 50% 60% 30% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .quote {
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    line-height: 1.4;
+  }
+  
