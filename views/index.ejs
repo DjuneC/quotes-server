@@ -1,7 +1,14 @@
 <%- include('./partials/header.ejs') %>
 
-    <h1>Vibrations of the Soul</h1>
-    <p><%= quote.content %></p>
-    <h5><%= quote.author %></h5>
-    
+    <h1>Soul's Vibrations<small class="text-primary">.</small></h1>
+
+    <div class="quote-container">
+      <h2 class="quote-container-title">Today's Quote</h2>
+      <div class="blob">
+        <h5 class="quote-category"><%= quote.category %></h5>
+        <p class="quote">"<%= quote.content %>"</p>
+        <p class="quote-author"><small><%= quote.author %></small></p>
+      </div>
+    </div>
+
 <%- include('./partials/footer.ejs') %>
