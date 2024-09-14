@@ -5,6 +5,7 @@ import quotes from "./data.js";
 const app = express();
 
 app.set("view engine", "ejs");
+app.use(express.static("public"));
 
 const PORT = process.env.PORT || 4000;
 
